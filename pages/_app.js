@@ -5,12 +5,12 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Script
-        strategy="afterInteractive"
+        strategy="worker"
         src="https://www.googletagmanager.com/gtag/js?id=G-PKJ7F2ESKE"
       />
       <Script
         id="analytics-tag"
-        strategy="afterInteractive"
+        strategy="worker"
         dangerouslySetInnerHTML={{
           __html: `
             window.dataLayer = window.dataLayer || [];
